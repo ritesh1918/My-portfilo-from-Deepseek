@@ -1,0 +1,44 @@
+:root {
+    --primary: #2A2A72;
+    --secondary: #009FFD;
+    --bg: white;
+    --text: #333;
+}
+
+[data-theme="dark"] {
+    --bg: #1A1A1A;
+    --text: #fff;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s all;
+}
+
+.profile-pulse {
+    animation: pulse 2s infinite;
+    border-radius: 50%;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(42, 42, 114, 0.5); }
+    70% { box-shadow: 0 0 0 15px rgba(42, 42, 114, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(42, 42, 114, 0); }
+}
+
+.bubbles span {
+    background: var(--primary);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 25px;
+    margin: 5px;
+    display: inline-block;
+    transition: 0.3s transform;
+}
+
+.bubbles span:hover {
+    transform: scale(1.1);
+}
+
+/* Full CSS available on request - trimmed for brevity */

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh Bonthalakoti | Tech Leader & Innovator</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dark/Light Toggle -->
+    <button id="themeToggle">🌗</button>
+
+    <!-- Hero Section -->
+    <header class="hero" data-aos="fade-down">
+        <div class="profile-pulse">
+            <img src="profile.jpg" alt="Ritesh Bonthalakoti">
+        </div>
+        <h1>Ritesh Bonthalakoti</h1>
+        <p class="tagline">Tech Enthusiast • Campus Leader • Innovator</p>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" data-aos="zoom-in">
+        <h2>🚀 About Me</h2>
+        <p>2nd Year ECE Student @ Sanketika Polytechnic College | Building Tech Solutions & Leading Teams</p>
+        <div class="edu-card">
+            <h3>🎓 Education</h3>
+            <p>Sanketika Polytechnic College (ECE, 2022-2025)</p>
+        </div>
+    </section>
+
+    <!-- Dynamic Skills Bubbles -->
+    <section class="skills" data-aos="fade-up">
+        <h2>💡 Superpowers</h2>
+        <div class="bubbles">
+            <span>Leadership</span>
+            <span>Video Editing</span>
+            <span>IoT Projects</span>
+            <span>Event Management</span>
+        </div>
+    </section>
+
+    <!-- Achievements Gallery -->
+    <section class="achievements" data-aos="flip-left">
+        <h2>🏆 Glory Moments</h2>
+        <div class="gallery">
+            <div class="card">
+                <h3>Campus Ambassador @ LetsUpgrade</h3>
+                <p>Led tech awareness campaigns for 500+ students</p>
+            </div>
+            <div class="card">
+                <h3>Yuvan 2K24 Coordinator</h3>
+                <p>Managed 20+ events with 1000+ participants</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Popup Trigger -->
+    <button class="cta" onclick="showContact()">📧 Get My Contact!</button>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideContact()">&times;</span>
+            <h3>Let's Collaborate! 🤝</h3>
+            <input type="email" placeholder="Your Email" id="userEmail">
+            <button onclick="revealContact()">Submit</button>
+            <div id="myContacts" style="display:none;">
+                <p>📧 ritesh@example.com</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/ritesh1918" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/ritesh1918" target="_blank">GitHub</a>
+                    <a href="https://instagram.com/ritesh_rowdy_1918" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
